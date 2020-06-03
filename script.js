@@ -1,12 +1,12 @@
 
-
-(function(window)
+(function()
 {
-var byeSpeaker =new Object();
-var speakWord = "Good Bye";
-
-byeSpeaker.speak=function (name) {
-  console.log(speakWord + " " + name);
-};
-window.byeSpeaker=byeSpeaker; 
-})(window);
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+for (var i=0;i<names.length;i++) {
+  var fl=names[i].charAt(0).toLowerCase();
+  if (fl=='j') {
+    byeSpeaker.speak(names[i]);
+  } else {
+  helloSpeaker.speak(names[i]);
+  }
+}})();
